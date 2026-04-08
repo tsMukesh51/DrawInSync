@@ -147,7 +147,7 @@ The Next.js runs on `http://localhost:4200` by default.
 
 ---
 
-## 🔥 Engineering Focus
+## Engineering Focus
 
 This project was built to explore and implement:
 
@@ -158,7 +158,7 @@ This project was built to explore and implement:
 
 ---
 
-## ⚠️ Limitations / Future Improvements
+## Limitations / Future Improvements
 
 * Add persistence layer (currently in-memory)
 * Implement room-based scaling
