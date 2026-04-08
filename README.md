@@ -1,34 +1,48 @@
 # DrawInSync
 
+**Real-time collaborative whiteboard built with WebSockets and TypeScript**
+
 DrawInSync is a collaborative drawing web app, enabling multiple users to draw on the same board simultaneously. This backend handles user management, board creation, collaboration, and real-time synchronization.
 
 ---
 
 ## Live Demo
 
-Check out the live application here: [DrawInSync Live](https://drawinsync.vercel.app/) *(Note: May be unavailable if still in development)*
+Check out the live application here: [DrawInSync Live](https://drawinsync.vercel.app/)
 
 ---
 
 ## **Table of Contents**
 
 1. [Project Overview](#project-overview)
-2. [Tech Stack](#tech-stack)
-3. [Setup Instructions](#setup-instructions)
-4. [Available Scripts](#available-scripts)
-5. [Features](#features)
+2. [Key Features](#key-features)
+3. [Tech Stack](#tech-stack)
+4. [Setup Instructions](#setup-instructions)
+5. [Available Scripts](#available-scripts)
 6. [Acknowledgements](#acknowledgements)
 
 ---
 
 ## **Project Overview**
 
-DrawInSync is a collaborative web app where multiple users can draw on the same board simultaneously. It provides features like user authentication, board management, and real-time synchronization of Elements across all device active on the board.
+DrawInSync allows multiple users to draw simultaneously on a shared canvas while maintaining consistent state across all clients.
 
-This is a **practice project**, and the primary focus is on:
-- Strengthening understanding System Design making trade offs.
-- Utilizing modern technologies like Next.js, Express, PostgreSQL (Prisma), and WebSocket.
-- Implementing modular and scalable project structures.
+This project focuses on solving core challenges of **real-time systems**, including:
+
+* Event synchronization
+* Conflict handling
+* Efficient state updates
+* Network optimization
+
+---
+
+## **Key Features**
+
+* Real-time drawing sync using **WebSockets**
+* Multi-user collaboration on shared canvas
+* Event-based architecture for state updates
+* Modular monorepo structure (apps + shared packages)
+* Optimized for low-latency communication
 
 ---
 
@@ -100,46 +114,22 @@ Ensure you have the following installed:
 
 4. Build the project:
    ```bash
-   npm run build
+   pnpm run build
    ```
 
 5. Start the server:
    ```bash
-   npm start
+   pnpm start
    ```
 
 6. For development:
    ```bash
-   npm run dev
+   pnpm run dev
    ```
 
 The http-server runs on `http://localhost:3000` by default.
+The ws-serrver runs on `http://localhost:8080` by default.
 The Next.js runs on `http://localhost:4200` by default.
-
----
-
-## **Available Scripts**
-
-### **`pnpm run dev`**
-Runs the app in development mode using Next.js. The server will automatically reload for any changes.
-
-### **`pnpm run build`**
-Builds the app for production. The build artifacts will be output to the appropriate folder.
-
-### **`pnpm run start`**
-Starts the production server.
-
----
-
-## **Features**
-
-- **User Signup & Login**: Create and authenticate user accounts.
-- **Board Creation**: Initialize a new drawing board with a unique slug.
-- **Collaboration**: Manage collaborators with EDITOR or VIEWER roles.
-- **Real-Time Drawing**: Synchronize drawing elements (RECTANGLE, CIRCLE, LINE) across users via WebSocket.
-- **Element Management**: Store and update drawing shapes with properties.
-
-Find API Doc in [endpoint.md](endpoint.md) *(to be created)*
 
 ---
 
