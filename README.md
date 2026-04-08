@@ -147,6 +147,27 @@ The Next.js runs on `http://localhost:4200` by default.
 
 ---
 
+## 🔥 Engineering Focus
+
+This project was built to explore and implement:
+
+* Real-time communication patterns
+* Handling concurrent user actions
+* Designing scalable WebSocket systems
+* Clean separation between client and server responsibilities
+
+---
+
+## ⚠️ Limitations / Future Improvements
+
+* Add persistence layer (currently in-memory)
+* Implement room-based scaling
+* Add rate limiting and throttling
+* Improve conflict resolution strategies
+* Horizontal scaling with pub/sub (Redis)
+
+---
+
 ## **Acknowledgements**
 
 Special thanks to my mentor **[Kirat](https://github.com/hkirat)** for guiding me through the initial stages of this project and helping me understand backend development principles.
