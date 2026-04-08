@@ -17,8 +17,7 @@ Check out the live application here: [DrawInSync Live](https://drawinsync.vercel
 2. [Key Features](#key-features)
 3. [Tech Stack](#tech-stack)
 4. [Setup Instructions](#setup-instructions)
-5. [Available Scripts](#available-scripts)
-6. [Acknowledgements](#acknowledgements)
+5. [Acknowledgements](#acknowledgements)
 
 ---
 
@@ -46,6 +45,22 @@ This project focuses on solving core challenges of **real-time systems**, includ
 ---
 
 ## **Project Architecture**
+
+### Core Concepts
+* **Event-driven model**
+
+  * Every drawing action is emitted as an event
+  * Server broadcasts updates to all connected clients
+
+* **State synchronization**
+
+  * Server acts as the source of truth
+  * Clients apply updates in sequence to maintain consistency
+
+* **Connection management**
+
+  * Handles multiple concurrent WebSocket connections
+  * Ensures reliable message propagation
 
 ```mermaid
 graph TD
