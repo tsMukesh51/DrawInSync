@@ -2,8 +2,7 @@
 
 **Real-time collaborative whiteboard built with WebSockets and TypeScript**
 
-DrawInSync is a collaborative drawing web app, enabling multiple users to draw on the same board simultaneously. This backend handles user management, board creation, collaboration, and real-time synchronization.
-
+A backend-driven system for synchronizing canvas state across multiple users in real time, with a focus on **low-latency updates, consistency, and scalable architecture**.
 ---
 
 ## Live Demo
